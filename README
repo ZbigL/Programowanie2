@@ -1,0 +1,20 @@
+
+
+TASK 10
+Napisz klasę Rectangle, która posiada pola: int width oraz int height.
+Parametry ustaw w konstruktorze. Wartości width i heigth nie mogą być mniejsze od 0
+(rzuć wyjątek IllegalArgumentException przy próbie ustawienia takiej wartości w konstruktorze).
+Napisz gettery do pól. Napisz metody updateWidth() i updateHeight(), które ustawią nowe wartości, ale najpierw sprawdzą, czy ustawiana wartość jest > 0.
+W przeciwnym przypadku nie powinny ustawić wartości (nic się nie wydarzy).
+Napisz metodę calculateArea(), która zwróci pole prostokąta.
+Napisz metodę calculatePerimeter(), która zwróci obwód prostokąta.
+Napisz klasę testową RectangleTest, która będzie posiadała pole typu Rectangle. Nie inicjalizuj pola.
+Napisz metodę oznaczoną jako @Before, która będzie ustawiała pole klasy testowej na Rectangle(3, 4).
+Napisz metodę oznaczoną jako @After, która wypisze na konsolę "After single test case".
+Napisz 3 testy jednostkowe: testCalculateArea, testCalculatePerimeter, testThrowExceptionOnIncorrectValuesInConstructor,
+które przetestują, czy metody klasy Rectangle działają w oczekiwany sposób.
+Napisz 2 testy jednostkowe dla getterów, które przetestują czy gettery zwracają odpowiednią wartość.
+Napisz 2 testy jednostkowe dla metod update...(), które sprawdzą, czy metody te ustawia odpowiednią wartość.
+Napisz 2 kolejne testy jednostkowe dla update...(), które sprawdzą, że wartość nie jest ustawiana jeśli jest mniejsza od 0.
+Napisz metody oznaczone jako @BeforeClass i @AfterClass, które wypiszą na konsolę odpowiednią informację,
+np. "Starting RectangleTest" i "Finishing RectangleTest.
