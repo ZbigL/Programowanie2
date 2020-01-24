@@ -28,7 +28,7 @@ public class Rectangle {
         return height;
     }
 
-    public void setHeight(int height) {
+    public void updateHeight(int height) {
         if (height > 0) this.height = height;
     }
 
